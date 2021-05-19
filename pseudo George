@@ -1,0 +1,13 @@
+Start 
+Display Virtual Phone
+Prompt user for LogIn details 
+(1)Username = customerID
+(2) Password = St@customerID
+If (username = (1) AND password = (2)) then
+Proceed to Profile 
+else if 
+
+Display invalidDetailsMessage
+ End if
+End if
+End
