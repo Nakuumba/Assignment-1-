@@ -1,3 +1,19 @@
+Website Acess
+1)username == "Ayesha"
+2)password == "1234"
+Input "www.AyeshaBeauty.com"
+Display virtualLogIn
+Prompt user for LogIn details
+Get "username=(1) && password==(2)"
+Proceed to virtualPhone
+If (LogIn details are false) then 
+Print "Access Denied!"
+Else if (LogIn details are false)then
+redirect to registrationPage
+ End if 
+End if
+End
+
 Start 
 Display Virtual Phone
 Prompt user for LogIn details 
