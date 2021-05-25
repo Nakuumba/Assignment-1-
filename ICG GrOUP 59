@@ -60,3 +60,12 @@ ELSE IF Customer BuyingPrice FOR Product3 IS > 75 THEN
 SUBTRACT SellingPrice FROM BuyingPrice THEN
 OUTPUT = "Here is your change"
 END
+
+START
+HairStyles=0
+DO (count= 0 to 69)
+prompt HairStyles(count)
+get HairStyles(count)
+ENDDO
+Display HairStyle
+END
