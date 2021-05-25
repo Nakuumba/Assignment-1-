@@ -1,4 +1,5 @@
-Website Acess
+Website Access
+#LogIn details
 1)username1 == "Ayesha"
 2)password1 == "1234"
 Input "www.AyeshaBeauty.com"
@@ -8,11 +9,13 @@ Get "username1==(1) && password1==(2)"
 Enter "username1 && password1"
 logIn = username1 + password1
 Proceed to virtualPhone
+logIn(){
 If (LogIn details are false) then 
 Print "Access Denied!"
 Else 
 If (LogIn details are false)then
 redirect to registrationPage
+}endfunction
   End if 
  End if
 End
