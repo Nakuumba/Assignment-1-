@@ -1,1 +1,25 @@
-Hallo
+begin
+    numeric nRoll
+    display "ENTER EMPLOYEE CODE : "
+    accept nRoll
+    switch(nRoll)
+    begin
+        case 1 : display "BLAKE"
+            break;
+        case 2 : display "AIDAN"
+            break;
+        case 3 : display "SHAUN"
+            break;
+        case 4 : display "ERASTUS"
+            break;
+        case 5 : display "ASHANTE"
+            break;
+        case 6 : display "QUINN"
+            break;
+        case 7 : display "HILTON"
+            break;
+        case 8 : display "BRANDON"
+            break;
+        case 9 : display "OLIVIA"
+    end
+end
