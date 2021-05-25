@@ -61,7 +61,17 @@ SUBTRACT SellingPrice FROM BuyingPrice THEN
 OUTPUT = "Here is your change"
 END
 
-START
+Start
+Prompt user for gender
+get gender
+   If (Gender==male) then
+     Display "MaleCatalogue"
+   else
+     (Gender==female) then
+     Display "FemaleCatalogue"
+   endif
+Display "selected hairstyle"
+
 HairStyles=0
 DO (count= 0 to 69)
 prompt HairStyles(count)
