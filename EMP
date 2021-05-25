@@ -21,8 +21,6 @@ begin
         case 8 : display "BRANDON"
             break;
         case 9 : display "OLIVIA"
-            break;
-        default : display "ERROR"
     end
 end
  
