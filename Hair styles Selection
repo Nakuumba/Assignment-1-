@@ -1,0 +1,11 @@
+Start
+Prompt user for gender
+get gender
+   If (Gender==male) then
+     Display "MaleCatalogue"
+   else
+     (Gender==female) then
+     Display "FemaleCatalogue"
+   endif
+Display "selected hairstyle"
+END
