@@ -69,3 +69,11 @@ get HairStyles(count)
 ENDDO
 Display HairStyle
 END
+START
+HairStyles=0
+ DO (count= 0 to 39)
+   prompt HairStyles(count)
+   get HairStyles(count)
+ ENDDO
+Display HairStyle
+END
