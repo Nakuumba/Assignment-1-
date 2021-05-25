@@ -1,17 +1,20 @@
 Website Acess
-1)username == "Ayesha"
-2)password == "1234"
+1)username1 == "Ayesha"
+2)password1 == "1234"
 Input "www.AyeshaBeauty.com"
 Display virtualLogIn
 Prompt user for LogIn details
-Get "username=(1) && password==(2)"
+Get "username1==(1) && password1==(2)"
+Enter "username1 && password1"
+logIn = username1 + password1
 Proceed to virtualPhone
 If (LogIn details are false) then 
 Print "Access Denied!"
-Else if (LogIn details are false)then
+Else 
+If (LogIn details are false)then
 redirect to registrationPage
- End if 
-End if
+  End if 
+ End if
 End
 
 Start 
