@@ -40,11 +40,11 @@ Choice
 Display "Applications"
 Get Choice
 Case of Choice{
-1)
-2)
-3)
-4)
-5)
+1)Customer Care
+2)Beauty Queens & Kings
+3)Employees
+4)Products & Shipping
+5)FINANCES
 End case
 End
 
@@ -56,3 +56,18 @@ a = customer(001, Justin, N$ 2048.50)
 b = customer(002, Apollina, N$130)
 c = customer(003,Lonzo, N$ 11500)
 selectProblem(){
+1) I registered but can't login
+2) Be assisted by worker
+3) Product shipment
+4) Balance enquiry
+5) Applying for ayeshaCreditCard
+
+If problem selected == '1' then
+(send username && password for reset)
+newLogIn_details "username == customerID"
+else
+Display "webPage is undergoing maintenance"
+
+If problem selected == '2' then
+fetch(EMPLOYEE CODE){
+DO COUNT (0 to 8)
