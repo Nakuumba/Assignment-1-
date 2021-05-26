@@ -57,3 +57,18 @@ return
     print "my assistant makes "
       myAssistant.getWeeklyPay(), "per week"
       
+      
+input employeeCode
+
+Enter employeeCode
+logIn(){   if employeeCode = "true"
+      print "code valid" then
+      output employeeInformation
+   Else
+      if employeeCode = "false"
+         print "code invalid" then
+         redirect to homePage
+}endfunction
+      Endif
+   Endif
+end  
