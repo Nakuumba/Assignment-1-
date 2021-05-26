@@ -1,0 +1,59 @@
+class Employee
+  input string lastName
+      num hourlyWage
+      num weeklyPay
+
+  void setLastName(string name)
+     lastName = name
+    return
+
+  void setHourlyWage(num wage)
+     hourlyWage = wage
+     calculateWeeklyPay()
+    return
+
+  string getLastName()
+  return lastName
+
+  num getHourlyWage()
+  return hourlyWage
+
+  num getWeeklyPay()
+  return weeklyPay
+
+  void calculateWeeklyPay()
+       num WORK_WEEK_HOURS = 40
+      weeklyPay = hourlyWage * WORK_WEEK_HOURS
+     return
+endclass
+
+
+void setHourlyWage(num wage)
+   inputs
+        num MINWAGE = 13.50
+        num MAXWAGE = 65.00
+   if wage < MINWAGE then
+      hourlyWage = MINWAGE
+   else
+      if wage > MAXWAGE then
+         hourlyWage = MAXWAGE
+      else
+         hourlyWage = wage
+      endif
+    endif
+    calculateWeeklyPay()
+return
+
+
+
+  Employee = myAssistant
+  num LOW = 13.50
+  num HIGH = 65.00
+       myAssistant.setLastName("Izaaks")
+       myAssistant.setHourlyWage(LOW)
+    print "My assistant makes ",
+      myAssistant.getWeeklyPay(), "per week"
+ myAssistant.setHourlyWage(HIGH)
+    print "my assistant makes "
+      myAssistant.getWeeklyPay(), "per week"
+      
