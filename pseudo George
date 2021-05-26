@@ -33,3 +33,26 @@ Display invalidDetailsMessage
  End if
 End if
 End
+
+
+Start
+Choice
+Display "Applications"
+Get Choice
+Case of Choice{
+1)
+2)
+3)
+4)
+5)
+End case
+End
+
+##Module
+Customer Service
+Fetch customerInfo(){
+customer = {customerID, name, ayeshaAccountBalance}
+a = customer(001, Justin, N$ 2048.50)
+b = customer(002, Apollina, N$130)
+c = customer(003,Lonzo, N$ 11500)
+selectProblem(){
