@@ -159,6 +159,7 @@ logIn(){   if employeeCode = "true"
    Endif
 end  
 
+Start
 READ Product 1
 
 Product1 = Hair Spray
@@ -166,21 +167,16 @@ Product1 = Hair Spray
 READ Product1Cost
 
 Product1 Cost = 50
-
-Print Product1 + Product1 Cost
-
-OUTPUT = Hair Spray 50
-
-IF Customer buys Product1 THEN
-Product1 IS Sold
-
-END
-
-#### Hair spray costs $50
+ 
+OUTPUT = Product1 + Product1 Cost
+Print Hair Spray 50
 
 Product2 = Shampoo
 Product3 = Conditioner
 Product2 Price = 45 AND Product3 Price = 75
+
+IF Customer buys Product1 THEN
+Product1 IS Sold
 
 IF Customer BuyingPrice FOR Product2 IS < 45 THEN
 OUTPUT = "Not Enough Money"
@@ -195,6 +191,7 @@ ELSE IF Customer BuyingPrice FOR Product3 IS > 75 THEN
 SUBTRACT SellingPrice FROM BuyingPrice THEN
 OUTPUT = "Here is your change"
 END
+
 
 Start
 Prompt user for gender
