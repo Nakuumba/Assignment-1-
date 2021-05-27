@@ -1,52 +1,44 @@
-  
-Website Access
-#LogIn details
-1)username1 == "Ayesha"
-2)password1 == "1234"
-Input "www.AyeshaBeauty.com"
+#Module 1
+//Website Access LogIn details
+Start 
+Enter "www.AyeshaBeauty.com"
 Display virtualLogIn
 Prompt user for LogIn details
-Get "username1==(1) && password1==(2)"
-Enter "username1 && password1"
+Get "username==(1) && password==(2)"
 logIn = username1 + password1
-Proceed to virtualPhone
+Proceed to virtualPhone 
+Fetch LogIn(details)
+//Once logged in 
+Enter Virtual Phone
+End 
+
+Start
+Choice
+Display "Please select choice"
+Get choice
+Case of (Choice){
+1) Customer Care
+2) Beauty Queens
+3) Employees
+4) Products & Shipping
+5) Finances
+End case
+End
+
+logIn(details){
+username && password
+If registered (username == "Ayesha" && password == "1234")
+
+
 logIn(){
 If (LogIn details are false) then 
-Print "Access Denied!"
+Display "Access Denied!"
 Else 
 If (LogIn details are false)then
 redirect to registrationPage
 }endfunction
   End if 
  End if
-End
-
-Start 
-Display Virtual Phone
-Prompt user for LogIn details 
-(1)Username = customerID
-(2) Password = St@customerID
-If (username = (1) AND password = (2)) then
-Proceed to Profile 
-else if 
-
-Display invalidDetailsMessage
- End if
-End if
-End
-
-
-Start
-Choice
-Display "Applications"
-Get Choice
-Case of Choice{
-1)Customer Care
-2)Beauty Queens & Kings
-3)Employees
-4)Products & Shipping
-5)FINANCES
-End case
 End
 
 choice(1)
@@ -58,6 +50,8 @@ a = customer(001, Justin, N$ 2048.50)
 b = customer(002, Apollina, N$130)
 c = customer(003,Lonzo, N$ 11500)
 selectProblem(){
+
+
 begin
     numeric nRoll
     display "ENTER EMPLOYEE CODE : "
