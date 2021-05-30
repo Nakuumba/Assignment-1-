@@ -1,81 +1,95 @@
-#Module 1
-//Website Access LogIn details
-Start 
-Enter "www.AyeshaBeauty.com"
-Display virtualLogIn
-Prompt user for LogIn details
-Get "username==(1) && password==(2)"
-logIn = username1 + password1
-Proceed to virtualPhone 
-Fetch LogIn(details)
-//Once logged in 
-Enter Virtual Phone
-End 
 
-Start
-Choice
-Display "Please select choice"
-Get choice
-Case of (Choice){
-1) Customer Care
-2) Beauty Queens
-3) Employees
-4) Products & Shipping
-5) Finances
-End case
-End
-
-logIn(details){
-username && password
-If registered (username == "Ayesha" && password == "1234")
-
-
-logIn(){
-If (LogIn details are false) then 
-Display "Access Denied!"
-Else 
-If (LogIn details are false)then
-redirect to registrationPage
-}endfunction
-  End if 
- End if
-End
-
-choice(1)
-##Module
-Customer Service
+##Module 1
+Customer Care
 Fetch customerInfo(){
 customer = {customerID, name, ayeshaAccountBalance}
 a = customer(001, Justin, N$ 2048.50)
 b = customer(002, Apollina, N$130)
 c = customer(003,Lonzo, N$ 11500)
 selectProblem(){
+1) I registered but can't login
+2) Be assisted by worker
+3) Product shipment
+4) Balance enquiry
+5) Applying for ayeshaCreditCard
 
+If problem selected == '1' then
+(send username && password for reset)
+newLogIn_details "username == customerID"
+else
+Display "webPage is undergoing maintenance"
 
+If problem selected == '2' then
+fetch(EMPLOYEE CODE)
+call ""
+
+If problem selected == '3' then
+fetch(EMPLOYEE CODE)
+call ""
+If problem selected == '4' then
+fetch(EMPLOYEE CODE)
+call ""
+If problem selected == '5' then
+fetch(EMPLOYEE CODE)
+call ""
+
+##Module 2
+Beauty Queens
+Start
+Prompt user for gender
+Get gender
+   If (Gender==male) then
+     Display "MaleCatalogue"
+   else
+     (Gender==female) then
+     Display "FemaleCatalogue"
+   end if
+  end if
+Display "selected hairstyle"
+
+HairStyles=0
+DO (count 0 to 49)
+Prompt user for hairStyles(count)
+get hairStyles[count]
+ENDDO
+Display HairStyle
+END
+START
+HairStyles=0
+ DO (count= 0 to 39)
+   prompt user for hairStyles(count)
+   get hairStyles[count]
+ ENDDO
+Display HairStyle
+END
+
+calalogue(){
+
+##Module 3
 begin
     numeric nRoll
     display "ENTER EMPLOYEE CODE : "
     accept nRoll
     switch(nRoll)
     begin
-        case 1 : display "BLAKE"
+        case 1 : display "JOE"
             break;
-        case 2 : display "AIDAN"
+        case 2 : display "SUE"
             break;
-        case 3 : display "SHAUN"
+        case 3 : display "AIDAN"
             break;
         case 4 : display "ERASTUS"
             break;
-        case 5 : display "ASHANTE"
+        case 5 : display "SHAUN"
             break;
-        case 6 : display "QUINN"
+        case 6 : display "BLAKE"
             break;
         case 7 : display "HILTON"
             break;
         case 8 : display "BRANDON"
             break;
         case 9 : display "OLIVIA"
-    end
+    end case
 end
 
 class Employee
@@ -153,7 +167,9 @@ logIn(){   if employeeCode = "true"
    Endif
 end  
 
+//Module 4
 Start
+
 READ Product 1
 
 Product1 = Hair Spray
@@ -161,55 +177,32 @@ Product1 = Hair Spray
 READ Product1Cost
 
 Product1 Cost = 50
- 
-OUTPUT = Product1 + Product1 Cost
-Print Hair Spray 50
+
+Print Product1 + Product1 Cost
+
+OUTPUT = Hair Spray 50
+
 
 Product2 = Shampoo
 Product3 = Conditioner
-Product2 Price = 45 AND Product3 Price = 75
+Product2 Cost = 45 && Product Cost = 75
 
-IF Customer buys Product1 THEN
+IF (Customer buys Product1) then
 Product1 IS Sold
 
-IF Customer BuyingPrice FOR Product2 IS < 45 THEN
-OUTPUT = "Not Enough Money"
-ELSE IF Customer BuyingPrice FOR Product2 IS > 45 THEN
-SUBTRACT SellingPrice FROM BuyingPrice THEN
+If(Customer BuyingPrice FOR Product2 IS < 45) then
+Print "Not Enough Money"
+Else if
+(Customer BuyingPrice FOR Product2 = 45) then
+Cost = Cost - sellingPriceSUBTRACT SellingPrice FROM BuyingPrice THEN
 OUTPUT = "Here is your change"
-END
+  End If
+ End If
+End
 
 IF Customer BuyingPrice FOR Product3 IS < 75 THEN
 OUTPUT = "Not Enough Money"
 ELSE IF Customer BuyingPrice FOR Product3 IS > 75 THEN
 SUBTRACT SellingPrice FROM BuyingPrice THEN
 OUTPUT = "Here is your change"
-END
-
-
-Start
-Prompt user for gender
-get gender
-   If (Gender==male) then
-     Display "MaleCatalogue"
-   else
-     (Gender==female) then
-     Display "FemaleCatalogue"
-   endif
-Display "selected hairstyle"
-
-HairStyles=0
-DO (count= 0 to 69)
-prompt HairStyles(count)
-get HairStyles(count)
-ENDDO
-Display HairStyle
-END
-START
-HairStyles=0
- DO (count= 0 to 39)
-   prompt HairStyles(count)
-   get HairStyles(count)
- ENDDO
-Display HairStyle
 END
