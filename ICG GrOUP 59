@@ -1,3 +1,27 @@
+//Website Access LogIn details
+Start 
+Enter "www.AyeshaBeauty.com"
+Display virtualLogIn
+Prompt user for LogIn details
+Get "username==(1) && password==(2)"
+logIn = username1 + password1
+Proceed to virtualPhone 
+Fetch LogIn(details)
+//Once logged in 
+Enter Virtual Phone
+
+Start
+Choice
+Display "Please select choice"
+Get choice
+Case of (Choice){
+1) Customer Care
+2) Beauty Queens
+3) Employees
+4) Products & Shipping
+5) Finances
+End case
+End
 
 ##Module 1
 Customer Care
