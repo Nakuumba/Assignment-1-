@@ -1,5 +1,6 @@
-Website Access
-#LogIn details
+//Website Access LogIn details
+Start
+Enter
 1)username1 == "Ayesha"
 2)password1 == "1234"
 Input "www.AyeshaBeauty.com"
@@ -7,48 +8,43 @@ Display virtualLogIn
 Prompt user for LogIn details
 Get "username1==(1) && password1==(2)"
 Enter "username1 && password1"
-logIn = username1 + password1
 Proceed to virtualPhone
+//Once logged in show Virtual Phone
+
+Start
+Choice 
+Display "Applications"
+Get choice
+Case of (Choice){
+1) Customer Care
+2) Beauty Queens
+3) Employees
+4) Products & Shipping
+5) Finances
+End case
+End
+
+logIn(details){
+username && password
+If registered (username == "Ayesha" && password == "1234") then
+access is granted
+
+}end function
+  End if
+End
+
+
 logIn(){
-If (LogIn details are false) then 
-Print "Access Denied!"
-Else 
-If (LogIn details are false)then
-redirect to registrationPage
+if (username !="customerID" && password !="St@customerID") then 
+display errorMessage
+else if (username =="customerID" && password =="St@customerID")then
+display virtualPhone
 }endfunction
   End if 
  End if
 End
 
-Start 
-Display Virtual Phone
-Prompt user for LogIn details 
-(1)Username = customerID
-(2) Password = St@customerID
-If (username = (1) AND password = (2)) then
-Proceed to Profile 
-else if 
-
-Display invalidDetailsMessage
- End if
-End if
-End
-
-
-Start
-Choice
-Display "Applications"
-Get Choice
-Case of Choice{
-1)Customer Care
-2)Beauty Queens & Kings
-3)Employees
-4)Products & Shipping
-5)FINANCES
-End case
-End
-
-##Module
+##Module1
 Customer Service
 Fetch customerInfo(){
 customer = {customerID, name, ayeshaAccountBalance}
@@ -71,3 +67,16 @@ Display "webPage is undergoing maintenance"
 If problem selected == '2' then
 fetch(EMPLOYEE CODE){
 DO COUNT (0 to 8)
+
+
+If problem selected == '3' then
+fetch(Transport module)
+call "driver"
+
+If problem selected == '4' then
+fetch(Finance module)
+call ""
+
+If problem selected == '5' then
+fetch(customer table)
+call ""
