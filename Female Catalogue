@@ -7,3 +7,15 @@ ENDDO
 Display HairStyle
 END
 
+
+(CASE STRUCTURE)
+Prompt user for Hairstyle
+Get Hairstyle
+case of (Hairstyle)
+1="Short curly"
+2="BAangs"
+3="Medium wavy cut"
+4="Blond Ends'
+5="Red/Blue highlights"
+6="Long wavy"
+Dedault "View Female Catalougue"
