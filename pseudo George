@@ -1,17 +1,14 @@
-//Website Access LogIn details
-Start
-Enter
-1)username1 == "Ayesha"
-2)password1 == "1234"
-Input "www.AyeshaBeauty.com"
-Display virtualLogIn
-Prompt user for LogIn details
-Get "username1==(1) && password1==(2)"
-Enter "username1 && password1"
-Proceed to virtualPhone
-//Once logged in show Virtual Phone
 
-Start
+//Website Access LogIn details
+Start 
+Enter "www.AyeshaBeauty.com"
+Display "Virtual LogIn"
+Prompt user for LogIn details
+Get "username==(1) && password==(2)"
+logIn = username1 + password1
+Proceed to virtualPhone 
+//Once logged in show Virtual Phone and select application
+
 Choice 
 Display "Applications"
 Get choice
@@ -24,15 +21,60 @@ Case of (Choice){
 End case
 End
 
+##Module 1
+
+Customer Care
+selectProblem(){
+1) I registered but can't login
+2) Be assisted by worker
+3) Product shipment
+4) Applying for ayeshaCreditCard 
+5) Balance enquiry
+}endfunction
+Start
+Prompt the user for query
+Get query
+If (problem  == '1')then
+Display "username=customerID + password=St@customerID"
+
+else if (problem  == '2')then
+call/contact (JOE)
+fetch(employeeCode){
+count = 0
+DOWHILE (count < 9)
+employeeCode = employeeCode + name[count]  
+count = count + 1
+ENDDO
+
+else if (problem  == '3')then
+fetch(Transport module)
+call "driver"
+
+else if (problem  == '4')then
+
+
+else if (problem  == '5')then
+fetch(Finance module)
+Prompt user for Pin
+Get Pin
+Balance = currentBalance - Amount
+Display "Balance"
+else
+Display "webPage is undergoing maintenance"
+
+	end if
+      end if
+    end if
+   end if
+ end if
+End
+
 logIn(details){
 username && password
 If registered (username == "Ayesha" && password == "1234") then
 access is granted
 
 }end function
-  End if
-End
-
 
 logIn(){
 if (username !="customerID" && password !="St@customerID") then 
@@ -43,40 +85,3 @@ display virtualPhone
   End if 
  End if
 End
-
-##Module1
-Customer Service
-Fetch customerInfo(){
-customer = {customerID, name, ayeshaAccountBalance}
-a = customer(001, Justin, N$ 2048.50)
-b = customer(002, Apollina, N$130)
-c = customer(003,Lonzo, N$ 11500)
-selectProblem(){
-1) I registered but can't login
-2) Be assisted by worker
-3) Product shipment
-4) Balance enquiry
-5) Applying for ayeshaCreditCard
-
-If problem selected == '1' then
-(send username && password for reset)
-newLogIn_details "username == customerID"
-else
-Display "webPage is undergoing maintenance"
-
-If problem selected == '2' then
-fetch(EMPLOYEE CODE){
-DO COUNT (0 to 8)
-
-
-If problem selected == '3' then
-fetch(Transport module)
-call "driver"
-
-If problem selected == '4' then
-fetch(Finance module)
-call ""
-
-If problem selected == '5' then
-fetch(customer table)
-call ""
