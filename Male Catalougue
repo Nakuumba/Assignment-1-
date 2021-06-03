@@ -6,3 +6,18 @@ HairStyles=0
  ENDDO
 Display HairStyle
 END
+
+(CASE STRUCTURE)
+Prompt user for Hairsyle
+Get Hairstyle
+case of (Hairstyle)
+1="Clipper Fade"
+2="Buzz Cut"
+3="Pompadour"
+4="Low Fade'
+5="Military Haircut"
+6="Mohawk"
+7="Braids"
+8="Man Bun"
+9="CR7 Special"
+Dedault "View Male Catalougue"
