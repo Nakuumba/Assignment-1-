@@ -275,3 +275,23 @@ END
 
 //Module 5
 Finance
+
+Finance
+Account = {Membership, , Balance Required, Qualification}
+("VIP", N$20000, "Eligible")
+("Gold", "N$10000", "Eligible")
+("Standard", "N$5000", "Pending Validation")
+("Standard", "N$5000", "Pending Validation")
+("Junior", "N$1500", "Not Eligible")
+
+Start
+Prompt user for Membership
+Get Membership
+Prompt user for Balance Required
+Get Balance Required
+Prompt user for Qualification  
+Get Qualification
+If(membership=="VIP" && balanceRequired==N$2000 && Qualification=="Eligible")then 
+Display "Eligible for Ayesha Credit Card"
+End If
+End
