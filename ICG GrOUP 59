@@ -8,6 +8,11 @@ logIn = username1 + password1
 Proceed to virtualPhone 
 //Once logged in show Virtual Phone and select application
 
+
+logIn(details){
+username && password
+If registered (username == "Ayesha" && password == "1234") then
+display "access is granted"
 Choice 
 Display "Applications"
 Get choice
@@ -35,9 +40,11 @@ Prompt the user for query
 Get query
 If (problem  == '1')then
 Display "username=customerID + password=St@customerID"
+else
+Display "webPage is undergoing maintenance"
 
 else if (problem  == '2')then
-call/contact (JOE)
+call/contact (BLAKE)
 fetch(employeeCode){
 count = 0
 DOWHILE (count < 9)
@@ -50,16 +57,14 @@ fetch(Transport module)
 call "driver"
 
 else if (problem  == '4')then
-
+Display "Register Here" 
 
 else if (problem  == '5')then
 fetch(Finance module)
 Prompt user for Pin
-Get Pin
-Balance = currentBalance - Amount
-Display "Balance"
-else
-Display "webPage is undergoing maintenance"
+getUserPIN
+Balance = currentBalance - expenses
+Print "Balance"
 
 	end if
       end if
@@ -68,10 +73,6 @@ Display "webPage is undergoing maintenance"
  end if
 End
 
-logIn(details){
-username && password
-If registered (username == "Ayesha" && password == "1234") then
-access is granted
 
 }end function
 
@@ -84,7 +85,6 @@ display virtualPhone
   End if 
  End if
 End
-
 
 //Module 2
 Beauty Queens
@@ -127,20 +127,10 @@ case of (Hairstyle)
 9="CR7 Special"
 Dedault "View Male Catalougue"
 
-START
-HairStyles=0
-DO (count= 0 to 69)
-prompt HairStyles(count)
-get HairStyles(count)
-ENDDO
-Display HairStyle
-END
-
-
-(CASE STRUCTURE)
+Case of Hairstyle{
 Prompt user for Hairstyle
 Get Hairstyle
-case of (Hairstyle)
+
 1="Short curly"
 2="BAangs"
 3="Medium wavy cut"
@@ -148,6 +138,9 @@ case of (Hairstyle)
 5="Red/Blue highlights"
 6="Long wavy"
 Dedault "View Female Catalougue"
+End case
+End
+
 
 
 //Module 3
@@ -174,6 +167,7 @@ Employees = {employeeID, name, monthSalary}
 3 = employee(2006, "Shaun", "N$1350")
 4 = employee(2081, "Erastus", "N$2200")
 5 = employee(1999, "Ashante", "N$1400")
+// Assume we only need the data of 5 employees
 
 Start
 Do (count 0 to 5)
@@ -234,21 +228,7 @@ return
     print "my assistant makes "
       myAssistant.getWeeklyPay(), "per week"
       
-      
-input employeeCode
 
-Enter employeeCode
-logIn(){   if employeeCode = "true"
-      print "code valid" then
-      output employeeInformation
-   Else
-      if employeeCode = "false"
-         print "code invalid" then
-         redirect to homePage
-}endfunction
-      Endif
-   Endif
-end   
 
 //Module 4
 Start
@@ -256,6 +236,8 @@ Start
 READ Product 1
 
 Product1 = Hair Spray
+Product2 = Shampoo
+Product3 = Conditioner
 
 READ Product1Cost
 
@@ -266,8 +248,7 @@ Print Product1 + Product1 Cost
 OUTPUT = Hair Spray 50
 
 
-Product2 = Shampoo
-Product3 = Conditioner
+
 Product2 Cost = 45 && Product Cost = 75
 
 IF (Customer buys Product1) then
@@ -290,9 +271,7 @@ SUBTRACT SellingPrice FROM BuyingPrice THEN
 OUTPUT = "Here is your change"
 END
 
-//Module 5
 
+
+//Module 5
 Finance
-Start 
-Prompt user for ID
-Get ID
