@@ -14,7 +14,84 @@ begin
             break;
         case 5 : display "ASHANTE"
             break;
-        case 6 : display "QUINN"
     endcase
 end
  
+
+Employees = {employeeID, name, monthSalary}
+1 = employee(2003, "Blake", "N$9500")
+2 = employee(2002, "Aidan", "N$7000")
+3 = employee(2006, "Shaun", "N$1350")
+4 = employee(2081, "Erastus", "N$2200")
+5 = employee(1999, "Ashante", "N$1400")
+
+Start
+Do (count 0 to 5)
+Prompt the user Salary
+Get Salary [count]
+Weekly wage = monthSalary % 4
+
+Declaration
+class Employee
+input string lastName
+num hourlyWage
+num weeklyPay
+
+void setHourlyWage(num wage)
+hourlyWage = wage
+calculateWeeklyPay()
+return
+
+num getHourlyWage()
+return hourlyWage
+
+num getWeeklyPay()
+return weeklyPay
+
+void calculateWeeklyPay()
+num WORK_WEEK_HOURS = 40
+weeklyPay = hourlyWage * WORK_WEEK_HOURS
+return
+endclass
+
+setHourlyWage(num wage)
+inputs
+num MINWAGE = 13.50
+num MAXWAGE = 65.00
+if wage < MINWAGE then
+hourlyWage = MINWAGE
+else
+if wage > MAXWAGE then
+hourlyWage = MAXWAGE
+else
+hourlyWage = wage
+endif
+endif
+calculateWeeklyPay()
+return
+
+Employee = myAssistant
+num LOW = 13.50
+num HIGH = 65.00
+myAssistant.setName("Blake")
+myAssistant.setHourlyWage(LOW)
+print "My assistant makes ",
+myAssistant.getWeeklyPay(), "per week"
+myAssistant.setHourlyWage(HIGH)
+print "my assistant makes "
+myAssistant.getWeeklyPay(), "per week"
+
+input employeeCode
+
+Enter employeeCode
+logIn(){ if employeeCode = "true"
+print "code valid" then
+output employeeInformation
+Else
+if employeeCode = "false"
+print "code invalid" then
+redirect to homePage
+}endfunction
+Endif
+Endif
+end
